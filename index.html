@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" id="index">
+        <input type="text" id="value">
+        <button type="button" onclick="add()"> Add </button>
+        <button type="button" onclick="remove()"> Remove </button>
+    </form>
+
+    <script>
+        
+        function add(){
+            let ind = parseInt(document.getElementById("index").value);
+            let val = parseInt(document.getElementById("value").value);
+           
+            let arr = [];
+            console.log('arr');
+            // if(val!==""){
+            //     let myAraay = ["val"];
+            //     myAraay.push("val");
+               
+            // }
+            // else{
+
+            // }
+
+        }
+     let inputArray = document.getElementById("value");
+     console.log(parseInt(inputArray));
+     let inputIndex = document.getElementById("index");
+    //  let add = document.getElementById("add");
+    //  add.addEventListener("click", addFunc);
+    //  let remove = document.getElementById("remove");
+    //  remove.addEventListener("click", removeFunc);
+     let Moly = [inputArray];
+     //   console.log(Moly);
+     function add() {
+       console.log(inputArray.value);
+       console.log(parseInt(inputIndex.value));
+       // Moly.push(parseInt(inputArray.value));
+       Moly[parseInt(inputIndex.value)] = parseInt(inputArray.value);
+       console.log(Moly);
+     }
+     function remove() {
+       console.log(inputArray.value);
+       console.log(parseInt(inputIndex.value));
+       // Moly.push(parseInt(inputArray.value));
+       let MolyRemove = Moly[parseInt(inputIndex.value)];
+       Moly.splice(2, 1);
+       // Moly[inputIndex] = " ";
+       console.log(Moly);
+     }
+    </script>
+</body>
+</html>

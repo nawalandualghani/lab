@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+    class books{
+        static numberofbook=0;
+        constructor(name,aouther,nuofpages,chapter,curentpage){
+            this.name=name;
+            this.aouther=aouther;
+            this.nuofpages=nuofpages;
+            this.chapter=chapter;
+            this.curentpage=curentpage;
+            books.numberofbook++;
+        }
+       marker(page){
+           this.curentpage=page;
+
+           console.log(`Iam in page ${page}/${this.curentpage}`);
+
+       } 
+    }
+    let bo =new books("read","nawal",30,12,10);
+    let bo1 =new books("read","nawal",30,12,10);
+    let bo2 =new books("read","nawal",30,12,10);
+    let bo3 =new books("read","nawal",30,12,10);
+    let bo4 =new books("read","nawal",30,12,10);
+    console.log(`number of page ${bo.nuofpages}`);
+    // console.log(bo.marker());
+    bo.marker(10);
+    console.log(bo);
+    console.log(books.numberofbook);
+    </script>
+</body>
+</html>

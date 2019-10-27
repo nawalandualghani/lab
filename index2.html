@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    
+        <input type="text" id="n2">
+        <input type="text" id="n3">
+        <input type="text" id="n4">
+        <button role="button"  id="btn">add</button>
+    
+        <script>
+     
+                let name = document.getElementById("n2");
+                let aouther = document.getElementById("n3");
+                let nuofpages = document.getElementById("n4");
+                let add =document.getElementById('btn');
+
+                console.log(add);
+                class books{
+                    static numb=[];
+                    constructor(name,aouther,nuofpages,){
+                        this.name=name;
+                        this.aouther=aouther;
+                        this.nuofpages=nuofpages;
+                        // this.chapter=chapter;
+                        // this.curentpage=curentpage;
+                        // books.numberofbook++;
+                        books.numb.push(this);
+                        console.log("Added new book");
+                        
+                    }
+                   marker(page){
+                       this.curentpage=page;
+                     
+                       console.log(`Iam in page ${page}/${this.curentpage}`);
+            
+                   } 
+                }
+                
+                
+                // let bo1 =new books("read","nawal",30,12,10);
+                // let bo2 =new books("read","nawal",30,12,10);
+                // let bo3 =new books("read","nawal",30,12,10);
+                // let bo4 =new books("read","nawal",30,12,10);
+                // console.log(`number of page ${bo.nuofpages}`);
+                // console.log(bo.marker());
+                // bo.marker(10);
+                // console.log(bo);
+                // console.log(books.numb);
+
+
+
+                add.addEventListener("click",function(){
+                let bo =new books(name.value,aouther.value,nuofpages.value);
+                console.log(bo);
+                console.log("asdasd");
+
+            }  );  
+              
+                </script> 
+</body>
+</html>
